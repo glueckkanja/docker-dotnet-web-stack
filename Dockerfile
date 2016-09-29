@@ -10,4 +10,5 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g bower gulp-cli azure-cli typescript \
- && npm cache clean -g
+ && npm cache clean -g \
+ && echo '{ "allow_root": true }' > /root/.bowerrc
