@@ -1,5 +1,7 @@
 FROM microsoft/dotnet:1.0.0-preview2-sdk
 
+ENV npm_config_color=false
+
 RUN apt-get update && apt-get install -y \
   git \
   nodejs \
